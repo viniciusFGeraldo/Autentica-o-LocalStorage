@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/responsiveIndex.css">
+</head>
+<body>
+    <main>
+        <img class="logo" src="./img/logo.png" alt="logo">
+        <section class="login-container">
+            <article class="container-esquerdo">
+                <h1 class="conteudo-titulo">Bem-Vindo a <strong>ViniConstrutora</strong></h1>
+                <div class="conteudo">
+                    <p>Desde a apresentação do projeto, ainda na planta, ao suporte pós-entrega, a ViniConstrutora 
+                        comprovou que uma relação comercial pode ser, sim, acolhedora, instrutiva, segura, solidária
+                        e humana quando realizada por equipe motivada e altamente capacitada.
+                    </p>
+                </div>
+            </article>
+            <section class="container-direito">
+                <h1>LOGIN</h1>
+                <div id="msgError"></div>
+                <div class="container-name">
+                    <label for="usuario" id="userLabel">Usuário: </label>
+                    <input type="text" placeholder="" class="inputnome" id="usuario">
+                </div>
+                <div>
+                    <label for="senha" id="senhaLabel">Senha: </label>
+                    <div class="container-password">
+                        <input type="password" placeholder="" id="senha">
+                        <i class="fa fa-eye fa-lg" aria-hidden="true"></i><br>
+                    </div>
+                </div>
+                <button onclick="entrar()">Entrar</button>
+                <button class="criar"><a href="./criarConta.html">Criar conta</a></button>
+            </section>
+        </section>
+    </main>
+    <script src="./js/eyeIndex.js"></script>
+    <script src="./js/autenticacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de inicio</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url('./img/image4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            height: 40%;
+            border-radius: 10px;
+        }
+        .container-conteudo{
+            height: 70%;
+        }
+        .logado-init{
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2em;
+            color: white;
+        }
+        .logado-end{
+            text-align: center;
+            font-size: 1.5em;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: rgb(37, 252, 37);
+        }
+        .container-button{
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            height: 30px;
+            width: 80px;
+            background-color: red;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(209, 6, 6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-conteudo">
+            <p class="logado-init"></p>
+            <p class="logado-end"></p>
+        </div>
+        <div class="container-button">
+            <button onclick="sair()">Sair</button>
+        </div>
+    </div>
+
+    <script src="./js/telaInicio.js"></script>
+</body>
+</html>

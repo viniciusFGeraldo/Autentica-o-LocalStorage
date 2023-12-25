@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img/image3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color:rgba(255,255,255,0.7);
+    width: 35vw;
+    height: 80%;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    box-shadow: 8px 6px 1px 0px #00000020;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+
+    height: 24px;
+    display: flex;
+    outline: none;
+}
+#dataNascimento{
+    height: 24px;
+}
+
+#genero{
+    background-color:transparent;
+    width: 43%;
+    height: 24px;
+    border: none;
+    
+}
+.botao{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: blue;
+    color: white;
+    height: 25px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+button:hover{
+    background-color: darkblue;
+}
+.container-senha{
+    display: flex;
+    flex-direction: row;
+}
+.container-senha{
+    display: flex;
+    flex-direction: column;
+}
+.confirmPassword,.password{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+@media (max-width:950px){
+    .container{
+        width: 50vw;
+    }
+}
+
+@media (max-width:700px){
+    .container{
+        width: 60vw;
+    }
+}
+@media (max-width:500px){
+    .container{
+        width: 80vw;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="./css/criarconta.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1>Crie sua conta</h1>
+
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
+            <form>
+                <div>
+                    <label for="nome" id="labelNome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder='' required><br>
+                </div>
+                <div>
+                    <label for="usuario" id="labelUsuario">Usuário: </label>
+                    <input type="text" name="usuario" id="usuario" placeholder='' required><br>
+                </div>
+                <div>
+                    <label for="dataNascimento" id="labelData">Data de Nascimento: </label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" required><br>
+        
+                    <label for="genero" id="labelGenero">Gênero: </label>
+                    <select name="genero" id="genero" required>
+                        <option value=""></option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outros</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email" id="labelEmail">E-mail: </label>
+                    <input type="email" name="email" id="email" required><br>
+                </div>
+                <div class="container-senha">
+                    <label for="senha" id="labelSenha">Senha: </label>
+                    <div class="password">
+                        <input type="password" name="senha" id="senha" required>
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i><br>
+
+                    </div>
+                </div>
+                <div class="container-senha">
+                    <label for="confirmarSenha" id="labelConfirmSenha">Confirmar Senha: </label>
+                    <div class="confirmPassword">
+                        <input type="password" name="confirmarSenha" id="confirmarSenha" required>
+                        <i  id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i><br>
+                    </div>
+                </div>
+                <div class="botao">
+                    <button type="submit" onclick="cadastrar()">Criar Conta</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <script src="./js/eyeCriar.js"></script>
+    <script src="./js/validate.js"></script>
+</body>
+</html>

@@ -5,6 +5,8 @@
 }
 body{
     background-image: url('../img/image.jpg');
+    background-repeat: no-repeat;
+
 }
 .logo{
     position: absolute;
@@ -25,7 +27,7 @@ body{
 
 }
 .container-esquerdo{
-    background-image: url('../img/image2.gif');
+    
     height: 100%;
     width: 50%;
     border-radius: 12px;
@@ -33,9 +35,15 @@ body{
     margin-right: 10px;
 }
 .container-direito{
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: blue;
-    padding: 50px 0;
+    padding:15px;
     width: 50%;
 }
 .conteudo-titulo{

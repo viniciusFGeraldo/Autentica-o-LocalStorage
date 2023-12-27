@@ -96,7 +96,8 @@ confirmSenha.addEventListener('keyup', ()=>{
         validconfirmSenha = true;
     }
 })
-function cadastrar(){
+function cadastrar(event){
+    event.preventDefault();
     if(validNome && validUsuario && validEmail && validSenha && validconfirmSenha){
         let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
 
@@ -116,8 +117,10 @@ function cadastrar(){
             msgSuccess.setAttribute('style', 'display:block');
             msgSuccess.innerHTML = '<strong>Cadastrado com sucesso.</strong>';
 
+            setTimeout(function() {
+                window.location.href = 'http://127.0.0.1:5500';
+            }, 3000);
             
-            window.location.href = 'http://127.0.0.1:5500'
            
         }else{
             msgSuccess.setAttribute('style', 'display:none');
